@@ -20,6 +20,7 @@ gulp.task('js',function(){
 gulp.task('watch',function(){
 	gulp.watch('assets/css/*.scss',['css']);
 	gulp.watch('assets/main.js',['js']);
+	gulp.watch('assets/js/*.js',['js']);
 });
 
 gulp.task('default',['css','js','watch']);
