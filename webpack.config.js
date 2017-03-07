@@ -5,7 +5,7 @@ module.exports={
 		filename:"[name].bundle.js"
 	},
 	module:{
-		loaders:[{test:/\.js$/,loader:'jsx-loader'}]
+		loaders:[{test:/\.js$/,loader:'jsx-loader'},{test:/\.scss$/,loader:["style", "css", "sass"]}]
 	},
 	plugins:[]
 }
