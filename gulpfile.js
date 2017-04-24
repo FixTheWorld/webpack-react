@@ -13,6 +13,7 @@ gulp.task('css',function(){
 
 //js使用jshint测试格式，使用webpack加载，uglify压缩
 gulp.task('js',function(){
+	console.log('test');
 	gulp.src('assets/main.js').pipe(jshint()).pipe(webpack(webpackConfig)).pipe(uglify()).pipe(gulp.dest('build/'));
 });
 
